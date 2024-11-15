@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Quiz</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+  <div class="quiz-container">
+    <!-- Name input section -->
+    <div class="input-name" id="nameSection">
+      <h1>JavaScript Quiz</h1>
+      <label for="username">Enter your name:</label>
+      <input type="text" id="username" placeholder="Your Name">
+      <button class="button" id="startButton">Start Quiz</button>
+    </div>
+    
+    <!-- Quiz content -->
+    <div id="quizContent" style="display:none;">
+      <div class="progress-bar-container" id="progressBarContainer">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <div class="question" id="question"></div>
+      <ul class="options" id="options"></ul>
+      <button class="button" id="nextButton" disabled>Next Question</button>
+    </div>
+
+    <!-- Final page -->
+    <div id="finalPage" style="display:none;">
+      <h1>Congratulations!</h1>
+      <div class="result" id="result"></div>
+      <div class="congratulations" id="congratulationsMessage">You have completed the quiz!</div>
+<button class="restart-btn" id="restartButton">Restart Quiz</button>
+    </div>
+  </div>
+  <script src="quiz.js"></script>
+</body>
+</html>
